@@ -1,4 +1,6 @@
+#define _GNU_SOURCE
 #include <stdio.h>
+#include <stdlib.h>
 #include <unistd.h>
 
 /**
@@ -18,14 +20,35 @@
  */
 int main(int argc, char **argv)
 {
-	char *read;
+	/* FILE *stream; */
+	char *line, read[25];
+	/* size_t len = 0, nread;*/
+	(void)argc;
+	(void)argv;
+	
+	/*
+	 * if (argc != 2)
+	 * {
+	 * fprintf(stderr, "Usage: %s <file>\n", argv[0]);
+	 * exit(EXIT_FAILURE);
+	 * }
+	 */
 
+	/*stream = fopen(argv[1], "r");
+	if (stream == NULL) 
+	{
+		perror("fopen");
+		exit(EXIT_FAILURE);
+	}
+	*/
 
 	printf("($)");
 
-	while(read != EOF)
+	while(1)
 	{
-		read = getline();
+		line = fgets(read, 25, stdin);
+		printf("%s",line);
+		return (0);
 	}
 		return (0);
 }
