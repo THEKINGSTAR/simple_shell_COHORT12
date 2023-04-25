@@ -16,7 +16,7 @@
 
 
 
-![alt text](https://github.com/louzanizineddine/simple_shell/shell.jpeg?raw=true)
+![alt text](https://github.com/THEKINGSTAR/simple_shell/shell.jpeg?raw=true)
 
 > - ^ “The Gates of Shell”, by Spencer Cheng, featuring Julien Barbier
 
